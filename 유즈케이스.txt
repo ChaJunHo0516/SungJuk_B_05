@@ -1,0 +1,21 @@
+```mermaid
+graph LR
+    %% Actor 설정
+    Actor((교수))
+
+    %% Use Case 설정
+    UC1([성적입력])
+    UC2([학점조회])
+    UC3([교수체크])
+
+    %% 관계 설정
+    Actor --- UC1
+    Actor --- UC2
+
+    %% Include 관계 (반드시 체크해야 함)
+    UC1 -.->|&lt;&lt;include&gt;&gt;| UC3
+    UC2 -.->|&lt;&lt;include&gt;&gt;| UC3
+
+    %% 스타일링
+    style Actor fill:#f9f,stroke:#333,stroke-width:2px
+    style UC3 fill:#fff4dd,stroke:#d4a017,stroke-width:2px
