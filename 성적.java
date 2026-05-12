@@ -1,6 +1,6 @@
 package sungjuk;
 
-import model.교수;
+import sungjuk.교수;
 
 public class 성적 {
 	private String 학생id;
